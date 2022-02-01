@@ -1,27 +1,65 @@
 html{
 	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	background-image: url("background1.jpg");
 	background-size: cover;
-	background: lightgreen;
+	}
 
-	
-}
 h1{
-	background: #109763;
-	font: sans-serif;
+	font: oblique;
+	color: blue;
 	text-align: center;
-	margin-top: 100pt;
-	border: 2px solid black;
-	border-width: thick;
-	border-radius: 5px;
-	font-size: xx-large;
-	}	
-#image{
-	size: 100%;
-	border: dashed blue 4px;
-}
-#para{
-	background-color: cornflowerblue;
-	scroll-behavior: smooth;
-	text-align: center;
+	border: none;
+	font-size: 30px;
+	padding-left: 100px;
+	padding-bottom: 100px;
+	margin: 0px;
+	}
 
+h2{
+	text-align: center;
+	padding-top: 0px;
+	padding-left: 220px;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  box-sizing: 20px 50px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+
+.para{
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	font-size: 30px;
+	width: 100%;
+	color: chocolate;
 }

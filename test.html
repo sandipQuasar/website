@@ -2,26 +2,37 @@
 <html>
 <link rel="stylesheet" type="text/css" href="test.css">
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>My Profile</title>
 	</head>
-	
-<body>
-	
-	<h1>
-		Sandip Kumar Panda
-	</h1>
-	<p>
-		<div id=image>
-			<p>
-			<img src="https://t4.ftcdn.net/jpg/01/01/94/51/360_F_101945192_efxgx8EbWauu9zQApKZaSeaVubiqxHuS.jpg" alt="Image">
-			</p>
-	    </div>
-	    <div id="para">
-	    	<h2>
-				Learing new skills everyday!
-			</h2>
-		</div>
 
+<body>
+	<h1>	
+		<div class = 'name'>
+			Sandip Kumar Panda
+		</div>
+	</h1>
+	<div class="container" onclick="myFunction(this)">
+	  <div class="bar1"></div>
+	  <div class="bar2"></div>
+	  <div class="bar3"></div>
+	</div>
+
+	<script type="text/javascript">
+		function myFunction(x) {
+  			x.classList.toggle("change");
+			}
+	</script>
+
+	
+	
+
+	<p>
+		<div class="para">
+			Key Skills:<br>
+	    	JavaScript, Pyhton, HTML, CSS<br> Devops & AWS <br> Learing new skills everyday!
+			
+		</div>
 	</p>
 	
 </body>
